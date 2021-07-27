@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" /> 
+  <meta name="format-detection" content="telephone=no" /> 
+  <title>疫情防控期间学生外出审批</title> 
+  <link rel="stylesheet" href="./css/react-weui.css" />
+ </head>
+ <body>
+  <input type="hidden" id="_w_tusk" />
+  <link href="./css/main.css" type="text/css" rel="stylesheet" load-by-assets-loader="true" />
+  <div id="root">
+   <div class="weui-page OrderDetail root-view" style="animation-name: pageInRight;">
+    <div class="layout-wrapper">
+     <div class="layout-body-container">
+      <div class="layout-body">
+       <div class="weui-cells">
+        <div class="weui-cell title form-cell flow-status">
+         <div class="weui-cell__hd State">
+           已关闭
+         </div>
+         <div class="weui-cell__bd text-right"></div>
+        </div>
+        <div class="weui-cell title form-cell process"></div>
+        <div class="weui-cell title form-cell">
+         <div class="weui-cell__hd">
+          工单编号
+         </div>
+         <div id="uuid" class="weui-cell__bd">
+          RE210625000392
+         </div>
+        </div>
+        <div class="weui-cell title form-cell">
+         <div class="weui-cell__hd weui-cell__hd__copy">
+          创建人
+         </div>
+         <div id="studentName" class="weui-cell__bd">
+          方桂宝
+         </div>
+         <div class="weui-cell__ft State"></div>
+        </div>
+        <div class="weui-cell title form-cell">
+         <div class="weui-cell__hd weui-cell__hd__copy">
+          部门
+         </div>
+         <div class="weui-cell__bd">
+          机制2022
+         </div>
+         <div class="weui-cell__ft State"></div>
+        </div>
+        <div class="weui-cell title form-cell">
+         <div class="weui-cell__hd weui-cell__hd__copy">
+          处理人
+         </div>
+         <div class="weui-cell__bd">
+          <div>
+          </div>
+         </div>
+         <div class="weui-cell__ft State"></div>
+        </div>
+        <div class="weui-cell title form-cell">
+         <div class="weui-cell__hd">
+          申请时间
+         </div>
+         <div class="weui-cell__bd" id="sqsj">
+          0000-00-00 00:00
+         </div>
+         <div class="weui-cell__ft State"></div>
+        </div>
+       </div>
+       <div class="DynamicCells">
+        <h4 style="display: none;">form version =&gt; 2.0</h4>
+        <div class="weui-cells">
+         <div class="GroupCell">
+          <div class="GroupLabel">
+           最近离校时间（供参考）
+          </div>
+         </div>
+         <span class="tool-tip-title-cover" data-event="">
+          <div>
+           离校时间
+          </div></span>
+         <div class="weui-cell form-cell form-cell-text" data-test-id="FormCell_离校时间" data-editor="text">
+          <div class="weui-cell__hd">
+           <div class="cell_body_content title-inline">
+            离校时间
+           </div>
+          </div>
+          <div class="weui-cell__bd" placeholder="请选择">
+           <div class="textCell textPhone">
+            <textarea class="weui-textarea" placeholder="" type="text" inputtype="text" disabled="" style="text-align: right; height: 46px;"></textarea>
+           </div>
+          </div>
+          <div class="weui-cell__ft"></div>
+         </div>
+         <div class="__react_component_tooltip place-bottom type-dark" data-id="tooltip"></div>
+         <span class="tool-tip-title-cover" data-event="">
+          <div>
+           上次外出地点
+          </div></span>
+         <div class="weui-cell form-cell form-cell-text" data-test-id="FormCell_上次外出地点" data-editor="text">
+          <div class="weui-cell__hd">
+           <div class="cell_body_content title-inline">
+            上次外出地点
+           </div>
+          </div>
+          <div class="weui-cell__bd" placeholder="请选择">
+           <div class="textCell textPhone">
+            <textarea class="weui-textarea" placeholder="" type="text" inputtype="text" disabled="" style="text-align: right; height: 46px;"></textarea>
+           </div>
+          </div>
+          <div class="weui-cell__ft"></div>
+         </div>
+         <div class="__react_component_tooltip place-bottom type-dark" data-id="tooltip"></div>
+         <div class="GroupCell">
+          <div class="GroupLabel">
+           申请人信息
+          </div>
+         </div>
+         <span class="tool-tip-title-cover" data-event="">
+          <div>
+           姓名
+          </div></span>
+         <div class="weui-cell form-cell form-cell-text" data-test-id="FormCell_姓名" data-editor="text">
+          <div class="weui-cell__hd">
+           <div class="cell_body_content required title-inline">
+            姓名
+           </div>
+          </div>
+          <div class="weui-cell__bd" placeholder="请选择">
+           <div class="textCell textPhone">
+            <textarea id="name2"class="weui-textarea" placeholder="" type="text" inputtype="text" disabled="" style="text-align: right; height: 46px;">方桂宝</textarea>
+           </div>
+          </div>
+          <div class="weui-cell__ft"></div>
+         </div>
+         <div class="__react_component_tooltip place-bottom type-dark" data-id="tooltip"></div>
+         <span class="tool-tip-title-cover" data-event="">
+          <div>
+           学院
+          </div></span>
+         <div class="weui-cell form-cell choose-field-center" data-test-id="FormCell_学院" data-editor="reference">
+          <div class="weui-cell__hd">
+           <div class="cell_body_content title-inline">
+            学院
+           </div>
+          </div>
+          <div class="weui-cell__bd" placeholder="请选择">
+           瑞安学院
+          </div>
+          <div class="weui-cell__ft"></div>
+         </div>
+         <div class="__react_component_tooltip place-bottom type-dark" data-id="tooltip"></div>
+         <span class="tool-tip-title-cover" data-event="">
+          <div>
+           班级
+          </div></span>
+         <div class="weui-cell form-cell choose-field-center" data-test-id="FormCell_班级" data-editor="reference">
+          <div class="weui-cell__hd">
+           <div class="cell_body_content required title-inline">
+            班级
+           </div>
+          </div>
+          <div class="weui-cell__bd" placeholder="请选择">
+           机制2022
+          </div>
+          <div class="weui-cell__ft"></div>
+         </div>
+         <div class="__react_component_tooltip place-bottom type-dark" data-id="tooltip"></div>
+         <span class="tool-tip-title-cover" data-event="">
+          <div>
+           学号
+          </div></span>
+         <div class="weui-cell form-cell form-cell-text" data-test-id="FormCell_学号" data-editor="text">
+          <div class="weui-cell__hd">
+           <div class="cell_body_content title-inline">
+            学号
+           </div>
+          </div>
+          <div class="weui-cell__bd" placeholder="请选择">
+           <div class="textCell textPhone">
+            <textarea id="studentID" class="weui-textarea" placeholder="" type="text" inputtype="text" disabled="" style="text-align: right; height: 46px;">20032052224</textarea>
+           </div>
+          </div>
+          <div class="weui-cell__ft"></div>
+         </div>
+         <div class="__react_component_tooltip place-bottom type-dark" data-id="tooltip"></div>
+         <span class="tool-tip-title-cover" data-event="">
+          <div>
+           身份证号
+          </div></span>
+         <div class="weui-cell form-cell form-cell-text" data-test-id="FormCell_身份证号" data-editor="text">
+          <div class="weui-cell__hd">
+           <div class="cell_body_content title-inline">
+            身份证号
+           </div>
+          </div>
+          <div class="weui-cell__bd" placeholder="请选择">
+           <div class="textCell textPhone">
+            <textarea id="idCard" class="weui-textarea" placeholder="" type="text" inputtype="text" disabled="" style="text-align: right; height: 46px;">33010520010113003X</textarea>
+           </div>
+          </div>
+          <div class="weui-cell__ft"></div>
+         </div>
+         <div class="__react_component_tooltip place-bottom type-dark" data-id="tooltip"></div>
+         <span class="tool-tip-title-cover" data-event="">
+          <div>
+           联系方式
+          </div></span>
+         <div class="weui-cell form-cell form-cell-text" data-test-id="FormCell_联系方式" data-editor="text">
+          <div class="weui-cell__hd">
+           <div class="cell_body_content required title-inline">
+            联系方式
+           </div>
+          </div>
+          <div class="weui-cell__bd" placeholder="请选择">
+           <div class="textCell textPhone">
+            <textarea id="phone" class="weui-textarea" placeholder="" type="text" inputtype="text" disabled="" style="text-align: right; height: 46px;">17605966212</textarea>
+           </div>
+          </div>
+          <div class="weui-cell__ft"></div>
+         </div>
+         <div class="__react_component_tooltip place-bottom type-dark" data-id="tooltip"></div>
+         <div class="GroupCell">
+          <div class="GroupLabel">
+           填写外出信息
+          </div>
+         </div>
+         <span class="tool-tip-title-cover" data-event="">
+          <div>
+           外出事由
+          </div></span>
+         <div class="weui-cell form-cell form-cell-textarea" data-test-id="FormCell_外出事由" data-editor="textarea">
+          <div class="weui-cell__hd">
+           <div class="cell_body_content required title-inline">
+            外出事由
+           </div>
+          </div>
+          <div class="weui-cell__bd" placeholder="请选择">
+           <div>
+            <textarea class="weui-textarea" placeholder="" type="text" disabled="" style="height: 46px;">外出嫖娼</textarea>
+            <div class="weui-textarea-counter">
+             <span>5</span>
+            </div>
+           </div>
+          </div>
+          <div class="weui-cell__ft"></div>
+         </div>
+         <div class="__react_component_tooltip place-bottom type-dark" data-id="tooltip"></div>
+         <span class="tool-tip-title-cover" data-event="">
+          <div>
+           外出时间
+          </div></span>
+         <div class="weui-cell form-cell form-cell-datetimepicker" data-test-id="FormCell_外出时间" data-editor="datetimepicker">
+          <div class="weui-cell__hd">
+           <div class="cell_body_content required title-inline">
+            外出时间
+           </div>
+          </div>
+          <div class="weui-cell__bd" placeholder="请选择">
+           <div>
+            <input class="weui-input" id ="wcsj" type="text" placeholder="请选择" readonly="" disabled="" value="2021/06/26 00:00" />
+            <span class="weui-icon-checked"></span>
+           </div>
+          </div>
+          <div class="weui-cell__ft"></div>
+         </div>
+         <div class="__react_component_tooltip place-bottom type-dark" data-id="tooltip"></div>
+         <span class="tool-tip-title-cover" data-event="">
+          <div>
+           省
+          </div></span>
+         <div class="weui-cell form-cell choose-field-center" data-test-id="FormCell_省" data-editor="reference">
+          <div class="weui-cell__hd">
+           <div class="cell_body_content required title-inline">
+            省
+           </div>
+          </div>
+          <div class="weui-cell__bd" placeholder="请选择">
+           浙江省
+          </div>
+          <div class="weui-cell__ft"></div>
+         </div>
+         <div class="__react_component_tooltip place-bottom type-dark" data-id="tooltip"></div>
+         <span class="tool-tip-title-cover" data-event="">
+          <div>
+           市
+          </div></span>
+         <div class="weui-cell form-cell choose-field-center" data-test-id="FormCell_市" data-editor="reference">
+          <div class="weui-cell__hd">
+           <div class="cell_body_content required title-inline">
+            市
+           </div>
+          </div>
+          <div class="weui-cell__bd" placeholder="请选择">
+           温州市
+          </div>
+          <div class="weui-cell__ft"></div>
+         </div>
+         <div class="__react_component_tooltip place-bottom type-dark" data-id="tooltip"></div>
+         <span class="tool-tip-title-cover" data-event="">
+          <div>
+           区
+          </div></span>
+         <div class="weui-cell form-cell choose-field-center" data-test-id="FormCell_区" data-editor="reference">
+          <div class="weui-cell__hd">
+           <div class="cell_body_content required title-inline">
+            区
+           </div>
+          </div>
+          <div class="weui-cell__bd" placeholder="请选择">
+           瑞安市
+          </div>
+          <div class="weui-cell__ft"></div>
+         </div>
+         <div class="__react_component_tooltip place-bottom type-dark" data-id="tooltip"></div>
+         <span class="tool-tip-title-cover" data-event="">
+          <div>
+           外出地点
+          </div></span>
+         <div class="weui-cell form-cell form-cell-text" data-test-id="FormCell_外出地点" data-editor="text">
+          <div class="weui-cell__hd">
+           <div class="cell_body_content required title-inline">
+            外出地点
+           </div>
+          </div>
+          <div class="weui-cell__bd" placeholder="请选择">
+           <div class="textCell textPhone">
+            <textarea class="weui-textarea" placeholder="" type="text" inputtype="text" disabled="" style="text-align: right; height: 46px;">瑞安市</textarea>
+           </div>
+          </div>
+          <div class="weui-cell__ft"></div>
+         </div>
+         <div class="__react_component_tooltip place-bottom type-dark" data-id="tooltip"></div>
+         <span class="tool-tip-title-cover" data-event="">
+          <div>
+           承诺返校时间
+          </div></span>
+         <div class="weui-cell form-cell form-cell-datetimepicker" data-test-id="FormCell_承诺返校时间" data-editor="datetimepicker">
+          <div class="weui-cell__hd">
+           <div class="cell_body_content required title-inline">
+            承诺返校时间
+           </div>
+          </div>
+          <div class="weui-cell__bd" placeholder="请选择">
+           <div>
+            <input class="weui-input" id= "fxsj" type="text" placeholder="请选择" readonly="" disabled="" value="2021/06/26 22:00" />
+            <span class="weui-icon-checked"></span>
+           </div>
+          </div>
+          <div class="weui-cell__ft"></div>
+         </div>
+         <div class="__react_component_tooltip place-bottom type-dark" data-id="tooltip"></div>
+         <div class="LabelCell">
+          <div class="label_font_strong">
+           说明：外出学生最迟限22:00前返校。
+          </div>
+         </div>
+         <div class="GroupCell">
+          <div class="GroupLabel">
+           选择班主任和辅导员
+          </div>
+         </div>
+         <span class="tool-tip-title-cover" data-event="">
+          <div>
+           选择班主任
+          </div></span>
+         <div class="weui-cell form-cell choose-field-center" data-test-id="FormCell_选择班主任" data-editor="userselector">
+          <div class="weui-cell__hd">
+           <div class="cell_body_content required title-inline">
+            选择班主任
+           </div>
+          </div>
+          <div class="weui-cell__bd" placeholder="请选择">
+           付炎杰
+          </div>
+          <div class="weui-cell__ft"></div>
+         </div>
+         <div class="__react_component_tooltip place-bottom type-dark" data-id="tooltip"></div>
+         <span class="tool-tip-title-cover" data-event="">
+          <div>
+           选择辅导员
+          </div></span>
+         <div class="weui-cell form-cell choose-field-center" data-test-id="FormCell_选择辅导员" data-editor="userselector">
+          <div class="weui-cell__hd">
+           <div class="cell_body_content required title-inline">
+            选择辅导员
+           </div>
+          </div>
+          <div class="weui-cell__bd" placeholder="请选择">
+           沙姗姗
+          </div>
+          <div class="weui-cell__ft"></div>
+         </div>
+         <div class="__react_component_tooltip place-bottom type-dark" data-id="tooltip"></div>
+        </div>
+       </div>
+       <div class="magic-cube-view weui-cells" style="padding: 0px;">
+        <div class="approval-record  ">
+         <h4>审批记录
+          <div class="actions">
+           <span class="expend-btn">展开全部</span>
+           <span class="close-btn">收起</span>
+          </div></h4>
+         <ul>
+          <li class="descr-empty">
+           <div class="r-header">
+            <div class="node-name">
+             班主任审批
+            </div>
+            <div class="do-time" id="spsj">
+             2021-06-25 20:15
+            </div>
+           </div>
+           <div class="r-body">
+            <div class="r-body-header">
+             <div class="user">
+              <img class="avatar" src="./img/付炎杰.png" />
+              <span class="user-name">付炎杰</span>
+             </div>
+             <div class="status status-pass">
+              <i class="fa fa-check-circle"></i>&nbsp;同意
+             </div>
+            </div>
+            <div class="descr"></div>
+           </div></li>
+         </ul>
+        </div>
+        <div class="weui-tab tabs">
+         <div class="weui-navbar">
+          <div id="btn1" class="weui-navbar__item weui-bar__item_on" onclick="btn1()">
+           评论
+          </div>
+          <div id="btn2" class="weui-navbar__item" onclick="btn2()">
+           活动记录
+          </div>
+          <div id="btn3" class="weui-navbar__item" onclick="btn3()">
+           流程图
+          </div>
+          <div id="btn4" class="weui-navbar__item" onclick="btn4()">
+           抄送记录
+          </div>
+         </div>
+         <div class="weui-tab__panel">
+          <div id="tab1" style="display">
+           <div class="weui-cell">
+            <div class="weui-cell__bd">
+             <div class="comment-container">
+              <ul class="comment">
+               <div class="no-comments">
+                <span class="iconfont icon-pinglunhuifu">暂无评论</span>
+               </div>
+              </ul>
+              <div class="talk-field">
+               <div class="user-head">
+                <div class="user-head-container">
+                  <img id="img" src="./img/1.png">
+                </div>
+               </div>
+               <div class="observer">
+                <div class="input-container">
+                 <input type="input" placeholder="说点什么" />
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div id="tab2" style="display: none;">
+           <div class="weui-cell">
+            <div class="weui-cell__bd">
+             <div class="activity-record">
+              <h4></h4>
+              <ul class="wx-timeline">
+               <li class="wx-timeline-item">
+                <div class="wx-timeline-item-tail"></div>
+                <div class="wx-timeline-item-head wx-timeline-item-head-custom" style="border-color: blue;">
+                 <i class="fa fa-circle" style="font-size: 16px;"></i>
+                </div>
+                <div class="wx-timeline-item-content">
+                 <div id="date1" class="date">
+                  2021-06-25 20:15
+                 </div>
+                 <div class="disc">
+                  付炎杰 审批完毕，结果为同意，意见为无
+                 </div>
+                </div></li>
+               <li class="wx-timeline-item">
+                <div class="wx-timeline-item-tail"></div>
+                <div class="wx-timeline-item-head wx-timeline-item-head-custom" style="border-color: blue;">
+                 <i class="iconfont icon-circle-o" style="font-size: 16px;"></i>
+                </div>
+                <div class="wx-timeline-item-content">
+                 <div id="date2" class="date">
+                  2021-06-25 20:08
+                 </div>
+                 <div id="disc" class="disc">
+                  方桂宝 提交了该工单!
+                 </div>
+                </div></li>
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div id="tab3" style="display: none;">
+           <div class="weui-cell">
+            <div class="weui-cell__bd">
+             <div class="flow-chart-panel">
+              <h4></h4>
+              <div class="panel-inner">
+               <ul style="width: 500px;">
+                <li class="finish"><i data-idx="1" class=""></i><span>申请人重提</span></li>
+                <li class="finish"><i data-idx="2" class=""></i><span>班主任审批</span></li>
+                <li class="finish"><i data-idx="3" class=""></i><span>结束</span></li>
+               </ul>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div id="tab4" style="display: none;">
+           <div class="weui-cell">
+            <div class="weui-cell__bd">
+             <div class="cc-record">
+              <h4>抄送记录</h4>
+              <div class="weui-cells">
+               <div class="weui-cell">
+                <div class="weui-cell__hd">
+                 <img class="avatar" src="./img/沙姗姗.png" />
+                </div>
+                <div class="weui-cell__bd">
+                 <span class="user-name">沙姗姗</span>
+                </div>
+                <div class="weui-cell__ft">
+                 <div class="read-status">
+                  <em>未阅</em>
+                 </div>
+                 <span class="read-time"></span>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+ </body>
+   <script type="text/javascript" src="./js/main.js"></script>
+</html>
