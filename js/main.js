@@ -4,13 +4,6 @@
     var day = date.getDate();
     var hour = date.getHours();
     var minutes = date.getMinutes();
-    var nowTime = year + "-" + month + "-" + day + " " + hour + ":" + minutes;
-    parseInt(Math.random()*(4-0+1)+0,10);
-    var ID = Math.floor(Math.random()*(4-0+1)+0);
-    var studentName=new Array("陈禹","夏宇杰","方桂宝","丁展维","陈佳龙");
-    var studentID=new Array("20032052203","20032052219","20032052224","20032052231","20032052241");
-    var phone=new Array("18969828292","18557984406","15067341102","17857375860","13958352931");
-    var idCard=new Array("632323190605264560","632323190605260703","632323190605263701","632323190605260367","632323190605262186");
     if (month < 10) {
         month = "0" + month;
     }
@@ -23,6 +16,14 @@
     if (minutes < 10) {
         minutes = "0" + minutes;
     }
+    var nowTime = year + "-" + month + "-" + day + " " + hour + ":" + minutes;
+    parseInt(Math.random()*(4-0+1)+0,10);
+    var ID = Math.floor(Math.random()*(4-0+1)+0);
+    var studentName=new Array("陈禹","夏宇杰","方桂宝","丁展维","陈佳龙");
+    var studentID=new Array("20032052203","20032052219","20032052224","20032052231","20032052241");
+    var phone=new Array("18969828292","18557984406","15067341102","17857375860","13958352931");
+    var idCard=new Array("632323190605264560","632323190605260703","632323190605263701","632323190605260367","632323190605262186");
+
     document.getElementById("sqsj").innerHTML = nowTime;
     document.getElementById("wcsj").value = nowTime;
     document.getElementById("spsj").innerHTML = nowTime;
