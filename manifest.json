@@ -1,0 +1,23 @@
+{
+  "name": "qc-5kt-mobile",
+  "short_name": "足球机器人",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "start_url": "https://ggfong.github.io/qc-5kt-mobile/",
+  "icons": [
+    {
+      "src": "android/launchericon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "android/launchericon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "theme_color": "#000000",
+  "background_color": "#000000"
+}
